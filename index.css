@@ -1,0 +1,450 @@
+header{
+    height:100px;
+    position: relative;
+    margin-bottom: 80px;
+    
+}
+
+
+#tea{
+
+    background-repeat: no-repeat;
+    background-size:200px;
+
+    margin: 0;
+    height:101px;
+    width:272px;
+    text-indent: -600px;
+    position: absolute;
+    bottom:-30px;
+    left:10px;
+    
+        
+}
+
+
+
+#mainNav{
+    position: absolute;
+    top:60px;
+    right:0;
+    width:calc(100% - 250px);
+    margin-top: 10px;
+}
+
+
+#mainNav ul {
+            
+    list-style-type: none;
+    display:flex;
+    margin: 0px;
+    padding:0px;
+}
+
+        
+#mainNav ul li{
+    flex:1;
+    margin:0 5px;
+}
+
+
+#mainNav ul li a{
+    text-align:center;
+  
+    display:block;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+        
+#mainNav>ul>li>a{
+            
+    background-color: #a6c482;
+    text-align: center;
+    text-decoration: none; 
+    display:block;
+    color:white;
+    height: 32px;
+    line-height: 32px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+            
+            
+}
+
+        
+#mainNav ul li a:hover{
+            
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+    position:relative;
+    top:-3px;
+    left:-3px;
+           
+}
+
+
+
+
+#mainNav ul ul{
+    background-color: rgba(112, 139, 78, 0.86);
+    display: none;
+    padding:15px 12px 5px 12px ;
+    box-shadow: 0 3px 10px rgba(255,255,255,0.4);
+}
+
+/*選單的底色*/
+
+#mainNav ul ul li{
+    margin-bottom: 12px;
+    padding-bottom: 3px;
+    padding-bottom: 12px;
+}
+
+
+#mainNav>ul>li:hover ul{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+.carousel-fade .carousel-control { 
+    z-index: 2;
+}  
+.carousel-fade .item { 
+    opacity: 0; @include transition-property(opacity); 
+}
+.carousel-fade .active, .next.left, .prev.right { 
+    opacity: 1; 
+}
+.carousel-fade .active.left, .active.right { 
+    left: 0; opacity: 0; z-index: 1; 
+}
+
+
+
+
+.carousel-fade @media all (transform:3d)and (-webkit-transform:3d) 
+      .carousel-inner > .item.next,
+      .carousel-inner > .item.prev,
+      .carousel-inner > .item.active.right,
+      .carousel-inner > .item.active.left
+    {
+        opacity: 0; 
+        @include transform(translate3d(0, 0, 0)); 
+    }
+
+
+
+      
+.carousel-fade @media all (transform:3d)and(-webkit-transform:3d) 
+    .carousel-inner > .item.next.left,
+    .carousel-inner > .item.prev.right,
+    .carousel-inner > .item.active 
+    {
+        opacity: 1; 
+        @include transform(translate3d(0, 0, 0)); 
+    }
+    
+  
+}
+
+
+
+
+
+.carousel-control .control-icon {
+
+  height: 30px;
+  margin-top: -15px;
+  width: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  }
+  .carousel-control .prev { 
+      margin-left:  -100px;  
+      margin-top: 165px;
+      left: 50%; 
+} 
+  .carousel-control .next { 
+      margin-right: -100px; 
+      margin-top: 165px;
+      right: 50%; 
+}
+
+
+.carousel .control-box { 
+    opacity: 0;
+   
+}
+.carousel-control.left  { 
+    left: 0; 
+    background: none; 
+    border: 0;
+    
+}
+.carousel-control.right { 
+    right: 0; 
+    background: none; 
+    border: 0;
+}
+
+
+
+.control-box,  
+a.carousel-control, 
+.carousel-indicators li { @include transition(all 250ms ease-in-out); } 
+
+
+
+ 
+.carousel:hover .control-box { 
+    opacity: 1; 
+}
+.carousel:hover .carousel-control.left { 
+    left: 15px; 
+}
+.carousel:hover .carousel-control.right { 
+    right: 15px; 
+}    
+
+
+
+
+ 
+.carousel-indicators li { 
+    background: #666; 
+    margin: 0 3px; 
+    margin-bottom: -30px;
+    width: 5px; 
+    height: 5px; 
+    border: 0; 
+}
+.carousel-indicators  li.active { 
+    background: #fff; 
+    margin: 0 3px; 
+    width: 5px; 
+    height: 5px;
+    margin-bottom: -30px;
+    border: 0; 
+}
+
+
+        
+main{
+            
+
+    margin: 18px 0px;
+
+}
+
+main::after{
+    
+    content:""; 
+    clear:both; 
+    display:block; 
+}
+
+        
+#news{
+    
+    background-color: rgba(144, 120, 67, 0.1);
+    width: calc(30% - 8px);
+
+    float:left;
+    padding: 0px 12px 20px 12px;
+    margin-right: 10px;
+    min-height: 200px;
+
+}
+        
+#news h2,#hot h2{
+    
+    border-left: 12px solid ;
+    padding-left: 12px; 
+    color:#035312;
+    font-size:24px;
+    
+}
+        
+#news ul{
+    
+    list-style-type:none;
+    padding:0 4px; 
+    margin:0;
+             
+}
+        
+#news ul li{
+    margin-bottom: 12px;
+    padding:0 0 5px 10px;
+    border-bottom: 1px dashed rgba(144, 120, 67, 0.24);
+    color:#746828;
+               
+}
+#news ul li a{
+
+    text-decoration: none;
+    color: #746828;
+    
+}
+
+        
+        
+#hot{
+            
+
+    background-color: rgba(182, 198, 153, 0.26);
+    width:calc(70% - 6px);
+    float:right;
+    min-height: 200px;
+    padding: 0 12px 12px 12px;
+            
+}
+        
+#hot .itemWrap{
+    
+display: flex;
+    
+}
+        
+#hot .hotItem {
+            
+    flex:1;  
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+            
+}
+        
+#hot .hotItem img{
+    width:calc(100% - 20px);
+            
+}
+        
+#hot .hotItem h3{
+    text-align: center;
+    flex:1;
+    margin:0;
+    font-size: 18px;
+            
+}
+
+#hot .hotItem h3 a{
+
+    text-decoration: none;
+    color: rgb(108, 124, 89);
+    
+            
+}
+
+#hot .hotItem h3 a:hover{
+    text-shadow: 3px 4px 3px rgba(255, 255, 255, 0.82);
+    top:-2px;
+    left:-2px;
+           
+}
+
+
+        
+#hot .hotItem p{
+    text-align: center;
+    position: absolute;
+    right:-10px;
+    top:10px; 
+    background-color: rgb(198, 136, 38);
+    color:white;
+}
+        
+        
+
+
+
+
+
+
+
+footer{
+
+    background-color: rgba(132, 157, 132, 0.32);
+
+    padding:20px 0;
+    
+}
+
+footer .copyright{
+    display:block; 
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+
+@media(max-width:480px){
+    
+
+    
+    #mainNav ul li{
+
+        flex:0 ;
+        
+    }
+    
+   
+    
+    #news{
+        float:none;
+        width:calc(100% - 40px);
+        
+        
+    }
+    
+    
+    #hot{
+        
+        
+        float:none;
+
+    }
+    
+    #hot .hotItem{
+        flex: 0  calc(50% - 190px);
+            
+    }
+    
+    
+    
+    footer{
+
+        width:calc(70% - 170px);
+    }
+}
+
+/*
+@media(min-width:481px)and(max-width:768px){
+    #news{
+        float:none;
+        width:calc(100% - 40px);
+    }
+    
+    #hot{
+        
+        float:none;
+        width:calc(100% - 10px);
+        padding-left:10px;
+    }
+}
+*/

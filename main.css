@@ -1,0 +1,182 @@
+header{
+    height:100px;
+/*    background-color: yellow;*/
+    position: relative;
+    margin-bottom: 120px;
+    
+}
+
+
+#tea{
+/*    background-image: url(%E6%B8%85%E8%8C%B6%E6%BC%AC-14.png);*/
+    background-repeat: no-repeat;
+    background-size:200px;
+/*    background-color: forestgreen;*/
+    margin: 0;
+    height:101px;
+    width:272px;
+    text-indent: -600px;
+    position: absolute;
+    bottom:-30px;
+    left:10px;
+    
+        
+}
+
+/*
+
+#banner img{
+    width:calc(100% - 250px);
+}
+*/
+
+#mainNav{
+    position: absolute;
+    top:60px;
+    right:0;
+    width:calc(100% - 250px);
+    margin-top: 10px;
+}
+
+
+#mainNav ul {
+            
+    list-style-type: none;
+    display:flex;
+    margin: 0px;
+    padding:0px;
+}
+/*標題橫向排列*/
+        
+#mainNav ul li{
+    flex:1;
+    margin:0 5px;
+}
+/*標題均分*/
+
+#mainNav ul li a{
+    text-align:center;
+  
+    display:block;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+        
+#mainNav>ul>li>a{
+            
+    background-color: #a6c482;
+    text-align: center;
+    text-decoration: none; 
+    display:block;
+    color:white;
+    height: 32px;
+    line-height: 32px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+            
+            
+}
+/*標題的底色效果*/
+        
+#mainNav ul li a:hover{
+            
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+    position:relative;
+    top:-3px;
+    left:-3px;
+           
+}
+/*滑鼠移過去會有移動的效果*/
+
+
+
+#mainNav ul ul{
+    background-color: rgba(112, 139, 78, 0.86);
+    display: none;
+    padding:15px 12px 5px 12px ;
+    box-shadow: 0 3px 10px rgba(255,255,255,0.4);
+}
+
+/*選單的底色*/
+
+#mainNav ul ul li{
+    margin-bottom: 12px;
+    padding-bottom: 3px;
+    padding-bottom: 12px;
+}
+/*選單項目間隔*/
+
+/*
+#mainNav ul ul li:hover{
+    border-bottom: 1px solid #b7b7b7;
+    padding-bottom: 0.5px;
+}
+*/
+/*選單項目的底線*/
+
+#mainNav>ul>li:hover ul{
+    display: block;
+}
+/*讓下面子選單可以在滑鼠移過去時可以顯示出來*/
+
+
+
+
+
+
+footer{
+/*    background-color: rgba(179, 196, 148, 0.65);*/
+    background-color: rgba(132, 157, 132, 0.32);
+/*    background-color: rgba(183, 178, 156, 0.62);*/
+    padding:20px 0;
+/*    position: absolute;*/
+    bottom: 0;
+    
+}
+
+footer .copyright{
+    display:block; /*因為本來是inline但要讓他變成區塊才能置中*/
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+/*    background-color: aliceblue;*/
+}
+
+
+@media(max-width:480px){
+    
+
+    
+    #mainNav ul li{
+/*        flex:none;*/
+        flex:0 ;
+        
+    }
+    
+   
+    
+    #news{
+        float:none;
+        width:calc(100% - 40px);
+        
+        
+    }
+    
+    
+    #hot{
+        
+        
+        float:none;
+/*        width:calc(100% - 170px);*/
+/*        display: block;*/
+    }
+    
+    #hot .hotItem{
+        flex: 0 0 calc(50% - 20px;
+    }
+    
+    footer{
+
+        width:calc(70% - 170px);
+    }
+}

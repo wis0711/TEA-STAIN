@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TEA STAIN</title>
+	<link href="mstory.css" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+	<script src="jquery-3.3.1.min.js"></script>    
+    <script src="js/comm.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.2.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.1.js"></script>
+<script type="text/javascript" src="js/pngobject.js"></script>
+<link rel="stylesheet" href="style/style.css" type="text/css" />
+<link rel="stylesheet" href="style/jquery.fancybox-1.3.1.css" type="text/css" />
+<script>
+    $(function(){
+        
+        $('header').load('headerContent.html',
+                        function(){
+                        menuEff();
+        });
+        
+        $('footer').load('footerContent.html',
+                        function(){
+                        menuEff();
+        });
+    });
+    </script>
+    
+
+<script type="text/javascript">
+$(document).ready(function() {
+/*
+*  Examples - images
+*/
+$("a#example1").fancybox({
+'titleShow' : false
+});
+$("a#example2").fancybox({
+'titleShow' : false,
+'transitionIn' : 'elastic',
+'transitionOut' : 'elastic'
+});
+$("a#example3").fancybox({
+'titleShow' : false,
+'transitionIn' : 'none',
+'transitionOut' : 'none'
+});
+$("a#example4").fancybox();
+$("a#example5").fancybox({
+'titlePosition' : 'inside'
+});
+$("a#example6").fancybox({
+'titlePosition' : 'over'
+});
+$("a[rel=example_group]").fancybox({
+'transitionIn' : 'none',
+'transitionOut' : 'none',
+'titlePosition' : 'over',
+'titleFormat' : function(title, currentArray, currentIndex, currentOpts) {
+return '<span id="fancybox-title-over">Image '   (currentIndex   1)   ' / '   currentArray.length   (title.length ? '   '   title : '')   '</span>';
+}
+});
+/*
+*  Examples - various
+*/
+$("#various1").fancybox({
+'titlePosition' : 'inside',
+'transitionIn' : 'none',
+'transitionOut' : 'none'
+});
+$("#various2").fancybox();
+$("#various3").fancybox({
+'width'  : '75%',
+'height'  : '75%',
+'autoScale'  : false,
+'transitionIn' : 'none',
+'transitionOut' : 'none',
+'type'  : 'iframe'
+});
+$("#various4").fancybox({
+'padding'  : 0,
+'autoScale'  : false,
+'transitionIn' : 'none',
+'transitionOut' : 'none'
+});
+});
+</script>
+	
+</head>
+
+<body>
+<div id="wrap">
+
+<header>
+<!--   <h1 id="tea">tea</h1>-->
+   
+   
+   </header>
+   
+   
+   <main>
+      
+      <div id="news">
+        <h2>Infomation</h2>
+            <ul>
+
+                <li><a href="more.html">新品上市"芒果冰茶"</a></li>
+                <li><a href="one.html">優惠活動"買一送一！"</a></li>
+                <li><a href="cooperate.html">聯名商品"hui手繪"</a></li>
+                <li><a href="menu.png">ＭＥＮＵ更新</a></li>
+                 
+            </ul>
+    </div>
+      <div class="story"> 
+       <img class="logo" src="%E6%B8%85%E8%8C%B6%E6%BC%AC%E7%99%BD%E5%AD%97-24.png" width="260" height="130"><br>
+       
+	<div class="word">
+	    <h1></h1>
+        <br>
+        <p>
+            故事：<br>有一次在寧靜的下午，閒暇時看著一本書，<br>配上一杯上選的好茶，伴隨著徐徐微風吹來，<br>漸漸有了睡意，在打盹時，無意間把茶打翻在書上，<br>被茶浸溼的書本烘乾後，<br>還是留下了久久都無法去除的茶漬，<br>而時不時的散發出陣陣的清香，<br>故取名為清茶漬。
+        </p>
+        <br>
+        
+        <p>意義：<br>清新香氣的上選好茶，<br>喝下去時茶的餘韻在齒間流連，<br>就像茶漬的清香久久都難以去除而無法忘懷。</p>
+        
+        <h2>
+            「清」新香氣，
+            「茶」留齒間，
+            「漬」難忘懷。
+        </h2>
+   
+   
+    </div>
+    
+    <div class="content">
+<!--<h4>jQuery 實現點選小圖顯示大圖</h4>-->
+    <p>
+        <a rel="example_group" href="menu.png" alt="清茶漬菜單" title="清茶漬菜單" ><img alt="" src="menu%20min.png" /></a><br>清茶漬菜單
+
+    </p>
+
+
+    </div>
+</div>
+<!--
+    <div class="menu">
+        <img src="menu.png" alt="清茶漬菜單" title="清茶漬菜單" width="240" height="350" onMouseOver="this.width=this.width*2;this.height=this.height*2" onMouseOut="this.width=this.width/2;this.height=this.height/2">
+
+
+    </div>
+-->
+    </main>
+    
+    
+    <footer>
+        
+        
+    </footer>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    background-color:#e4eadd;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    
+    }
+        
+#wrap{
+    
+    width: 960px;
+    margin: 0 auto;
+/*  border:1px solid red;*/
+            
+    }
+
+
+
+
+main{
+            
+/*  background-color: darkseagreen;*/
+    margin: 40px 0px;
+    padding-bottom: 171px;
+    position: relative;
+    
+
+}
+
+main::after{
+    
+    content:""; 
+    clear:both; /*清空浮動元素*/
+    display:block; /*規定元素以區塊出現*/
+}
+
+
+.logo{
+    background-repeat: no-repeat;
+    background-size:200px;
+/*    background-color: forestgreen;*/
+    margin: 0;
+    position: absolute;
+/*    bottom:-30px;*/
+    right:20px;
+    top:300px;
+}
+
+
+
+
+
+.word {
+    
+
+    margin-top: 200px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+
+}
+
+.picture{
+
+    text-align: center;
+    display:block;
+
+   
+
+}
+
+.picture img{
+
+    flex:1;
+    margin:0 42px;
+    
+}
+
+
+
+.contentBox ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+.contentBox ul li{
+    flex:1;
+    margin:0 5px;
+}
+
+
+

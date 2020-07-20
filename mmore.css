@@ -1,0 +1,146 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    background-color:#e4eadd;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    
+    }
+        
+#wrap{
+    
+    width: 960px;
+    margin: 0 auto;
+/*  border:1px solid red;*/
+            
+    }
+
+
+
+main{
+            
+/*  background-color: darkseagreen;*/
+    margin: 40px 0px;
+    padding-bottom: 178px;
+    position: relative;
+    
+
+}
+
+main::after{
+    
+    content:""; 
+    clear:both; /*清空浮動元素*/
+    display:block; /*規定元素以區塊出現*/
+}
+
+
+/*
+.logo{
+    background-repeat: no-repeat;
+    background-size:200px;
+    background-color: forestgreen;
+    margin: 0;
+    position: absolute;
+    bottom:-30px;
+    right:20px;
+    top:280px;
+}
+*/
+#news{
+    
+    background-color: rgba(144, 120, 67, 0.1);
+    width: calc(30% - 34px);
+/*  height:200px;*/
+    float:left;
+    padding: 0px 12px 20px 12px;
+    margin-top:150px;
+    margin-right: 10px;
+    min-height: 200px;
+/*  color:#af8959;*/
+/*  text-align: center;*/
+/*    list-style-type: none;*/
+/*    text-decoration: none;*/
+}
+        
+#news h2,#hot h2{
+    
+    border-left: 12px solid ;
+/*  margin-left: 12px; 方塊跟邊框的距離*/
+    padding-left: 12px; /*方塊跟字的距離*/
+    color:#035312;
+    
+}
+        
+#news ul{
+    
+    list-style-type:none;
+    padding:0 4px; /*上下不動 左右縮進來*/
+    margin:0;
+             
+}
+        
+#news ul li{
+    margin-bottom: 12px;
+/*  padding-bottom: 5px;
+    padding-left: 10px; 可合併成下面那行 */
+    padding:0 0 5px 10px;
+    border-bottom: 1px dashed rgba(144, 120, 67, 0.24);
+    color:#746828;
+               
+}
+#news ul li a{
+
+    text-decoration: none;
+    color: #746828;
+    
+}
+
+.story{
+            
+/*    background-color: #d4e0bd;*/
+/*    background-color: rgba(144, 120, 67, 0.24);*/
+/*    background-color: rgba(182, 198, 153, 0.26);*/
+    width:calc(70% - 24px);
+/*  height:200px;*/
+    float:right;
+    margin-top:100px;
+    min-height: 200px;
+    padding: 0 12px 12px 12px;
+            
+}
+
+
+.advertise {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.word p{
+    
+
+
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width:calc(100% - 250px);
+    
+    }
+.word h1{
+/*    background-color: blueviolet;*/
+    text-align: center;
+    padding: 15px;
+    
+
+}
+
+
+
+
